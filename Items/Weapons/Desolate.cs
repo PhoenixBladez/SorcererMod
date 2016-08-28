@@ -33,9 +33,14 @@ namespace SorcererMod.Items.Weapons
         }
         
 
-        public override void AddRecipes()
+       public override void AddRecipes()
         {
-            //UUUHHHHH
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.DesertFossil, 10);
+            recipe.AddIngredient(ItemID.Amber, 2);
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this, 1);
+            recipe.AddRecipe();
         }
     }
 }
