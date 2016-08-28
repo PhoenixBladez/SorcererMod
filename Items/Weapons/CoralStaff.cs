@@ -23,7 +23,7 @@ namespace SorcererMod.Items.Weapons
 			item.noMelee = true; 
 			item.knockBack = 0;
 			item.value = 20000;
-			item.rare = 2;
+			item.rare = 3;
 			item.useSound = 20;
 			item.autoReuse = false;
 			item.shoot = mod.ProjectileType("CoralStaffProj");
