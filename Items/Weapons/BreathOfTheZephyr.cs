@@ -37,7 +37,7 @@ namespace SorcererMod.Items.Weapons
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Cloud, 15);
-            recipe.AddIngredient(ItemID.Sunplate, 10);
+            recipe.AddIngredient(ItemID.SunplateBlock, 10);
             recipe.AddIngredient(ItemID.Feather, 8);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this, 1);
