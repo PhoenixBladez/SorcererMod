@@ -1,0 +1,29 @@
+Hello, here is a thing that has things in it!!!!!1!!!!!!111!!1
+
+Normal Ultimate Doodad-
+- Fires a projectile. Now, what does that projectile do, you may ask? Weeelllllllllll, let me take you on a magical mystery tour of the wonders of doodads!!!!
+
+<insert fantastic magical tour of mystery and majescticalismness here>
+
+Wow! Wasn't that amazing!!!
+Let's recap what we learned
+- Projectile is fast
+- Main projectile breaks into 4 pieces that deal damages to enemasos, eash piece represents one of the staves, upon tile collision and hitting NPCs
+!~ Ocean piece creates a whirlpool BUT COOLER where it impacts
+!~ Desert piece makes a bunch of dust clouds fly in random directions
+!~ Ice piece breaks into very fast moving ice shards
+!~ Sky Piece EXPLODES in a bunch of dust that deals damage like an explosion
+
+True Ultimate Doodad-
+- Basically the same thing but with some extra features!
+Xtra feeturs
+- Shoots 1, then after a short time of using it it starts to shoot 2, then etc. until it gets to 3
+- Pieces home to enemies
+- Projectiles break into 8 pieces (2 for each)
+!~ Sky piece explodes bigger
+!~ Ice piece makes more shards
+!~ Ocean piece makes a whirlpool but whirlpool shoots corals at enemasos
+!~ Desert Piece dust clouds are just generally biggah!
+
+
+Well, this is gonna be fun to codez! Nothing will be TOO powerful but it'll be maybe penultimate, but don't tell the doodads that yet...
