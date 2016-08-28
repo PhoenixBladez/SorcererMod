@@ -13,7 +13,7 @@ namespace SorcererMod.Items.Weapons
             item.name = "Breath of the Zephyr"; 
             item.damage = 19;
             item.magic = true;
-            item.mana = 9;
+            item.mana = 13;
             item.width = 46;
             item.height = 46;
             item.useTime = 18;
