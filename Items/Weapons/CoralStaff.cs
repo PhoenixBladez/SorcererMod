@@ -28,6 +28,7 @@ namespace SorcererMod.Items.Weapons
 			item.autoReuse = false;
 			item.shoot = mod.ProjectileType("CoralStaffProj");
 			item.shootSpeed = 30f;
+            item.toolTip = "Creates a whirlpool to damage your enemies";
 		}
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
         {

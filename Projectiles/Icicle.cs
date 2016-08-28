@@ -16,7 +16,7 @@ namespace SorcererMod.Projectiles
             projectile.magic = true;
             projectile.width = 12;
             projectile.height = 28;
-            projectile.penetrate = -1;
+            projectile.penetrate = 2;
             projectile.timeLeft = 180;
             Main.projFrames[projectile.type] = 2;
         }
