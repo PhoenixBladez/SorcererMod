@@ -13,7 +13,7 @@ namespace SorcererMod.Items.Weapons
             item.name = "Ice Staff";
             item.damage = 18;
             item.magic = true;
-            item.mana = 8;
+            item.mana = 15;
             item.width = 46;
             item.height = 46;
             item.useTime = 28;
