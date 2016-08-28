@@ -13,7 +13,7 @@ namespace SorcererMod.Items.Weapons
             item.name = "Desolation"; //slightly changed the name :P
             item.damage = 17;
             item.magic = true;
-            item.mana = 9;
+            item.mana = 15;
             item.width = 46;
             item.height = 46;
             item.useTime = 7;
