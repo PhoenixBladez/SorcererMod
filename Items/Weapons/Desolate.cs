@@ -16,7 +16,7 @@ namespace SorcererMod.Items.Weapons
             item.mana = 11;
             item.width = 46;
             item.height = 46;
-            item.useTime = 7;
+            item.useTime = 11;
             item.useAnimation = 27;
             item.useStyle = 5;
             Item.staff[item.type] = true;
