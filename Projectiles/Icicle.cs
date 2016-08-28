@@ -62,7 +62,7 @@ namespace SorcererMod.Projectiles
 
         public override void Kill(int timeLeft)
         {
-            Main.PlaySound(2, (int)projectile.position.X, (int)projectile.position.Y, 30);
+            Main.PlaySound(2, (int)projectile.position.X, (int)projectile.position.Y, 50);
             Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, 67, projectile.oldVelocity.X * 0.2f, projectile.oldVelocity.Y * 0.2f);
         }
     }
