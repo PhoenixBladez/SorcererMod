@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+    <ProjectGuid>{E6220204-CCCA-4632-8CC0-CF0D28D295B6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
     <AssemblyName>ClassLibrary</AssemblyName>
@@ -27,14 +27,79 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>SorcererMod</RootNamespace>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.50428.0\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.50428.0\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics.ni">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.50428.0\Microsoft.Xna.Framework.Graphics.ni.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics.Shaders">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.50428.0\Microsoft.Xna.Framework.Graphics.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics.Shaders.ni">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.50428.0\Microsoft.Xna.Framework.Graphics.Shaders.ni.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.ni">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.50428.0\Microsoft.Xna.Framework.ni.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Windows.Xna">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Microsoft Silverlight\5.1.50428.0\System.Windows.Xna.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Terraria">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Terraria\Terraria.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="build.txt" />
+    <Content Include="description.txt" />
+    <Content Include="Items\Accessories\placeholder.txt" />
+    <Content Include="Items\Materials\placeholder.txt" />
+    <Content Include="Items\Placeable\placeholder.txt" />
+    <Content Include="Items\Weapons\BreathOfTheZephyr.png" />
+    <Content Include="Items\Weapons\CoralStaff.png" />
+    <Content Include="Items\Weapons\Desolate.png" />
+    <Content Include="Items\Weapons\Doodad Ideas!.txt" />
+    <Content Include="Items\Weapons\IceStaff.png" />
+    <Content Include="Items\Weapons\TheUltimateDoodad.png" />
+    <Content Include="Items\Weapons\TrueVersionOfTheUltimateDoodad.png" />
+    <Content Include="Projectiles\CoralStaffProj.png" />
+    <Content Include="Projectiles\Icicle.png" />
+    <Content Include="Projectiles\Sandstorm.png" />
+    <Content Include="Projectiles\Zephyr.png" />
+    <Content Include="Tiles\placeholder.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Items\Weapons\BreathOfTheZephyr.cs" />
+    <Compile Include="Items\Weapons\CoralStaff.cs" />
+    <Compile Include="Items\Weapons\Desolate.cs" />
+    <Compile Include="Items\Weapons\IceStaff.cs" />
+    <Compile Include="Items\Weapons\TheUltimateDoodad.cs" />
+    <Compile Include="Items\Weapons\TrueVersionOfTheUltimateDoodad.cs" />
+    <Compile Include="Projectiles\CoralStaffProj.cs" />
+    <Compile Include="Projectiles\Icicle.cs" />
+    <Compile Include="Projectiles\Sandstorm.cs" />
+    <Compile Include="Projectiles\Zephyr.cs" />
+    <Compile Include="SorcerersMod.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
