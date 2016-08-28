@@ -1,0 +1,3 @@
+author = PhoenixBlade 
+version = 0.1
+displayName = Sorcerer's Mod
