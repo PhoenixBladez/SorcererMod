@@ -13,10 +13,10 @@ namespace SorcererMod.Items.Weapons
 			item.name = "Coral Staff";
 			item.damage = 14;
 			item.magic = true;
-			item.mana = 8;
+			item.mana = 22;
 			item.width = 46;
 			item.height = 46;
-			item.useTime = 28;
+			item.useTime = 36;
 			item.useAnimation = 28;
 			item.useStyle = 5;
 			Item.staff[item.type] = true;
