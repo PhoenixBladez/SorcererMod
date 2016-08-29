@@ -30,6 +30,7 @@ namespace SorcererMod.Items.Weapons
             item.shootSpeed = 20f;
             item.autoReuse = true;
             item.toolTip = "Shoots Chaos Balls";
+            item.scale = 1.2f;
         }
 
 
