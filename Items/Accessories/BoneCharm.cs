@@ -39,7 +39,7 @@ namespace SorcererMod.Items.Accessories
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Bone, 20);
             recipe.AddIngredient(ItemID.ManaCrystal, 1);
-            recipe.AddTile(TileID.Anvil);
+            recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
         }
