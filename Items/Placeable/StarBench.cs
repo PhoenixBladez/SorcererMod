@@ -26,8 +26,8 @@ namespace SorcererMod.Items.Placeable
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.Bone, 20);
-            recipe.AddIngredient(ItemID.ManaCrystal, 1);
+            recipe.AddIngredient(ItemID.IronBar, 4);
+            recipe.AddIngredient(ItemID.FallenStar, 4);
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this, 1);
             recipe.AddRecipe();
