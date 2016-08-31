@@ -9,7 +9,7 @@ using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.DataStructures;
 
-namespace SorcerersMod.Tiles
+namespace SorcererMod.Tiles
 {
     public class ArchmageCollective : ModTile
     {
@@ -17,13 +17,14 @@ namespace SorcerersMod.Tiles
         {
             Main.tileFrameImportant[Type] = true;
             Main.tileBlockLight[Type] = true;
-            Main.tileSolid[Type] = true;
+            Main.tileSolid[Type] = false;
+            Main.tileSolidTop[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = false;
 
             TileObjectData.newTile.Width = 3;
             TileObjectData.newTile.Height = 4;
-            TileObjectData.newTile.Origin = new Point16(0, 3);
+            TileObjectData.newTile.Origin = new Point16(1, 3);
             TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile, TileObjectData.newTile.Width, 0);
             TileObjectData.newTile.UsesCustomCanPlace = true;
             TileObjectData.newTile.LavaDeath = true;
@@ -35,6 +36,7 @@ namespace SorcerersMod.Tiles
             AddMapEntry(new Color(200, 50, 50), "Archmage Collective");
 
             this.animationFrameHeight = 72;
+            adjTiles = new int[] { TileID.Bookcases };
         }
 
         public override void AnimateTile(ref int frame, ref int frameCounter)
@@ -46,6 +48,10 @@ namespace SorcerersMod.Tiles
 
                 frameCounter = 0;
             }
+        }
+        public override void KillMultiTile(int i, int j, int frameX, int frameY)
+        {
+            Item.NewItem(i * 16, j * 16, 32, 16, mod.ItemType("ArchmageCollective"));
         }
     }
 }

@@ -19,7 +19,7 @@ namespace SorcererMod.Tiles
 			TileObjectData.newTile.CoordinateHeights = new int[]{ 18 };
 			TileObjectData.addTile(Type);
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
-			AddMapEntry(new Color(255, 221, 45), "Example Workbench");
+			AddMapEntry(new Color(255, 221, 45), "Starbench");
 			disableSmartCursor = true;
 			adjTiles = new int[]{ TileID.WorkBenches };
 		}

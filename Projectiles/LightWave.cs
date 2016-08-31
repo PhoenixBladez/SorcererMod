@@ -44,7 +44,7 @@ namespace SorcererMod.Projectiles
             return false;
         }
 
-        public override void Kill(int timeLeft)
+        public override bool PreKill(int timeLeft)
         {
             Main.PlaySound(2, (int)projectile.position.X, (int)projectile.position.Y, 50);
             Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, 64, projectile.oldVelocity.X * 0.2f, projectile.oldVelocity.Y * 0.2f);
@@ -52,6 +52,7 @@ namespace SorcererMod.Projectiles
             int dust2 = Dust.NewDust(projectile.position + projectile.velocity, projectile.width, projectile.height, 64, projectile.oldVelocity.X * 0.2f, projectile.oldVelocity.Y * 0.2f);
             projectile.height = 80;
             projectile.width = 80;
+            return false;
         }
     }
 }
