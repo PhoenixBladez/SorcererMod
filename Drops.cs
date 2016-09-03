@@ -1,6 +1,13 @@
+using System.IO;
+using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.World.Generation;
+using Microsoft.Xna.Framework;
+using Terraria.GameContent.Generation;
+using System.Linq;
+
 
 namespace SorcererMod
 {
@@ -15,22 +22,31 @@ namespace SorcererMod
                     {
                         Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Snowflake"), 1);
                     }
-                }
-                /* Just doing this until i fix it
-                if (npc.type == NPCID.GoblinSorcerer && main.hardMode) // IDK IF THIS IS CORRECT, CHANGE LATER - Voxel
+                } 
+
+                if (npc.type == NPCID.GoblinSorcerer && Main.hardMode)
                 {
                     if (Main.rand.Next(10) == 1)
                     {
-                        Item.NewItem((int)npc.position.X, (int)npc.postition.Y, npc.width, npc.height, mod.ItemType("ShadowflameStaff"), 1);
+                        Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("ShadowflameStaff"), 1);
                     }
                     if (Main.rand.Next(15) == 2)
                     {
                         Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("ShadowflameBook"), 1);
                     }
                 }
-                */
                 
-                
+                //Gen for Magicite ore :P
+                if (npc.type == NPCID.EyeofCthulhu)
+                {
+                    Main.NewText("A Magic Aura spreads through the land", 219, 68, 227);
+                    for (int k = 0; k < (int)((double)(Main.maxTilesX * Main.maxTilesY) * 6E-05); k++)
+                    {
+                        WorldGen.TileRunner(WorldGen.genRand.Next(0, Main.maxTilesX), WorldGen.genRand.Next((int)WorldGen.worldSurfaceLow, Main.maxTilesY), (double)WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), mod.TileType("MagiciteOre"), false, 0f, 0f, false, true);
+                    }
+                }
+
+
                 //seperating to make it easier to see - Voxel
 
             } 
