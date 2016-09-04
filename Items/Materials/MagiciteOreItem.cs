@@ -15,6 +15,7 @@ namespace SorcererMod.Items.Materials
             item.useTime = 10;
             item.useStyle = 1;
             item.value = 50;
+            item.rare = 2;
             item.createTile = mod.TileType("MagiciteOre");
         }
     }
