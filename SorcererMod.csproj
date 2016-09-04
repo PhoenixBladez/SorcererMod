@@ -72,34 +72,70 @@
     <Content Include="Items\Accessories\placeholder.txt" />
     <Content Include="Items\Materials\placeholder.txt" />
     <Content Include="Items\Placeable\placeholder.txt" />
+    <Content Include="Items\Weapons\BlindingGaze.png" />
     <Content Include="Items\Weapons\BreathOfTheZephyr.png" />
+    <Content Include="Items\Weapons\ChaosBall.png" />
     <Content Include="Items\Weapons\CoralStaff.png" />
     <Content Include="Items\Weapons\Desolate.png" />
     <Content Include="Items\Weapons\Doodad Ideas!.txt" />
+    <Content Include="Items\Weapons\FireBall.png" />
+    <Content Include="Items\Weapons\ForerunnerOfTheWorlds.png" />
+    <Content Include="Items\Weapons\GlowingMushroomStaff.png" />
+    <Content Include="Items\Weapons\GrimoireOfDeath.png" />
     <Content Include="Items\Weapons\IceStaff.png" />
+    <Content Include="Items\Weapons\PinkGelStaff.png" />
+    <Content Include="Items\Weapons\ShadowflameBook.png" />
+    <Content Include="Items\Weapons\ShadowflameStaff.png" />
     <Content Include="Items\Weapons\TheUltimateDoodad.png" />
     <Content Include="Items\Weapons\TrueVersionOfTheUltimateDoodad.png" />
+    <Content Include="Items\Weapons\VanguardStaff.png" />
+    <Content Include="Items\Weapons\VineWand.png" />
+    <Content Include="Projectiles\ChaosBall.png" />
     <Content Include="Projectiles\CoralStaffProj.png" />
     <Content Include="Projectiles\Icicle.png" />
+    <Content Include="Projectiles\LightWave.png" />
+    <Content Include="Projectiles\PinkGelProj.png" />
     <Content Include="Projectiles\Sandstorm.png" />
+    <Content Include="Projectiles\ThornVine.png" />
     <Content Include="Projectiles\Zephyr.png" />
     <Content Include="Tiles\placeholder.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items\Weapons\BlindingGaze.cs" />
     <Compile Include="Items\Weapons\BreathOfTheZephyr.cs" />
+    <Compile Include="Items\Weapons\ChaosBall.cs" />
     <Compile Include="Items\Weapons\CoralStaff.cs" />
     <Compile Include="Items\Weapons\Desolate.cs" />
+    <Compile Include="Items\Weapons\FireBall.cs" />
+    <Compile Include="Items\Weapons\ForerunnerOfTheWorlds.cs" />
+    <Compile Include="Items\Weapons\GrimoireOfDeath.cs" />
     <Compile Include="Items\Weapons\IceStaff.cs" />
+    <Compile Include="Items\Weapons\PinkGelStaff.cs" />
+    <Compile Include="Items\Weapons\ShadowflameBook.cs" />
+    <Compile Include="Items\Weapons\ShadowflameStaff.cs" />
     <Compile Include="Items\Weapons\TheUltimateDoodad.cs" />
     <Compile Include="Items\Weapons\TrueVersionOfTheUltimateDoodad.cs" />
+    <Compile Include="Items\Weapons\VanguardStaff.cs" />
+    <Compile Include="Items\Weapons\VineWand.cs" />
+    <Compile Include="Projectiles\ChaosBall.cs" />
     <Compile Include="Projectiles\CoralStaffProj.cs" />
     <Compile Include="Projectiles\Icicle.cs" />
+    <Compile Include="Projectiles\LightWave.cs" />
+    <Compile Include="Projectiles\PinkGelProj.cs" />
     <Compile Include="Projectiles\Sandstorm.cs" />
+    <Compile Include="Projectiles\ThornVine.cs" />
     <Compile Include="Projectiles\Zephyr.cs" />
     <Compile Include="SorcerersMod.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".git\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Items\Weapons\Thumbs.db" />
+    <None Include="Projectiles\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>

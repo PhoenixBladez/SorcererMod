@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace SpiritMod.Items.Weapon.Magic
+namespace SorcererMod.Items.Weapons
 {
 	public class FireBall : ModItem
 	{
