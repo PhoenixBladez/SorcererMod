@@ -36,5 +36,8 @@ namespace SorcererMod
 					{
 						WorldGen.TileRunner(WorldGen.genRand.Next(0, Main.maxTilesX), WorldGen.genRand.Next((int)WorldGen.rockLayer, Main.maxTilesY), (double)WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), mod.TileType("MagiciteOre"), false, 0f, 0f, false, true);
 					}
+			}
+			}
+	}
     }  
 }  
