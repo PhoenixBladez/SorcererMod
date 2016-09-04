@@ -14,6 +14,7 @@ public class PinkGelProj : ModProjectile
 		projectile.height = 14;
 		projectile.aiStyle = 2;
 		projectile.penetrate = 4;
+        projectile.timeLeft = 180;
 		projectile.thrown = true;
 		projectile.friendly = true;
 		projectile.alpha = 0;
