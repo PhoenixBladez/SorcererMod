@@ -77,5 +77,18 @@ namespace SorcererMod.Projectiles
             projectile.oldPos[0] = projectile.position;
             projectile.position = position;
         }
+        public override void PostDraw(SpriteBatch spriteBatch, Color lightColor)
+        {
+            for (int k = 0; k < projectile.oldPos.Length; k++)
+            {
+                if (projectile.oldPos[k] == Vector2.Zero)
+                {
+                    return;
+                }
+                Vector2 drawPos = projectile.oldPos[k] - Main.screenPosition + projectile.Size / 2f;
+                Color color = Lighting.GetColor((int)(projectile.oldPos[k].X / 16f), (int)(projectile.oldPos[k].Y / 16f));
+                spriteBatch.Draw(Main.projectileTexture[projectile.type], drawPos, null, color, 0f, projectile.Size / 2f, 1f, SpriteEffects.None, 0f);
+            }
+        }
     }
 }

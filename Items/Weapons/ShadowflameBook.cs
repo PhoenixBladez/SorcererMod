@@ -19,7 +19,6 @@ namespace SorcererMod.Items.Weapons
             item.useTime = 10;
             item.useAnimation = 15;
             item.useStyle = 5;
-            Item.staff[item.type] = true;
             item.noMelee = true;
             item.knockBack = 0;
             item.value = 20000;
